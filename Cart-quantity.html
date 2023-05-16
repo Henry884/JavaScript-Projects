@@ -29,32 +29,68 @@
       background-color: blue;
       color: white;
     }
+
+    .grey-button {
+      background-color: grey;
+      color: white;
+    }
+
+    .purple-button {
+      background-color: purple;
+      color: white;
+    }
   </style>
 </head>
 <body>
   <button class="yellow-button" onclick="
     console.log(`Cart quantity: ${cartQuantity}`);
   ">Show Quantity</button>
+  
   <button class="green-button" onclick="
-    cartQuantity = cartQuantity + 1;
+    cartQuantity++;
     console.log(`Cart quantity: ${cartQuantity}`);
   ">Add to Cart</button>
   
   <button class="orange-button" onclick="
-    cartQuantity = cartQuantity + 2;
+    cartQuantity +=2;
     console.log(`Cart quantity: ${cartQuantity}`);
   ">+2</button>
   
   <button class="red-button" onclick="
-    cartQuantity = cartQuantity + 3;
+    cartQuantity +=3;
     console.log(`Cart quantity: ${cartQuantity}`);
   ">+3</button>
+
+  <button class="grey-button" onclick="
+    cartQuantity +=4;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">+4</button>
+
+  <button class="purple-button" onclick="
+    cartQuantity +=5;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">+5</button>
   
   <button class="blue-button" onclick="
-    cartQuantity = cartQuantity * 0;
+    cartQuantity = 0;
     console.log('Cart was reset!!');
     console.log(`Cart quantity: ${cartQuantity}`);
   ">Reset Cart</button>
+
+  <button onclick="
+    cartQuantity -=1;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">Remove from cart</button>
+
+  <button onclick="
+    cartQuantity -=2;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">-2</button>
+
+<button onclick="
+    cartQuantity -=3;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  ">-3</button>
 
   <script>
     let cartQuantity = 0;
