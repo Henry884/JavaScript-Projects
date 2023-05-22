@@ -9,8 +9,12 @@
   <script>
 
     const randNum = Math.random();
+    const result = randNum > 0.5 ? 'heads' : 'tails';
 
-    let result = '';
+    const guess = 'heads';
+    console.log(guess === result ? 'You win!' : 'You lose!');
+
+    /*let result = '';
 
     if (randNum < 0.5) {
       result = 'heads';
@@ -24,7 +28,7 @@
       console.log('You win!');
     } else {
       console.log('You lose!');
-    }
+    }*/
 
   </script>
 </body>

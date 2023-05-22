@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Functions</title>
+</head>
+<body>
+  <script>
+    /*
+    function func1() {
+      console.log('hello');
+      console.log(2 + 2);
+    }
+
+    func1();
+    func1();
+    */
+
+    /*function calculateTax(para1, taxPercent = 0.1) {
+      console.log(para1 * taxPercent);
+    }
+
+    calculateTax(2000, 0.2);
+    calculateTax(5000);
+    */
+    // Function Declaration.
+    function sayHello() {
+      console.log('Hello');
+    }
+
+    sayHello();
+
+    //Function Expression.
+    var sayBye = function() {
+      console.log('byebye');
+    }
+
+    sayBye();
+
+    function sing(song) {
+      console.log(song);
+    }
+
+    sing('gugugugugu');
+    sing('popopopopo');
+    sing('lililililli');
+
+    function multiply(a, b) {
+      if (a > 10 || b > 10) {
+        return 'thats too hard';
+      } else {
+        return a * b;
+      }
+    }
+
+    multiply(4, 5);
+
+    function addition(a, b) {
+      return a + b;
+    }
+
+    alert(addition(7,7));
+  </script>
+</body>
+</html>
